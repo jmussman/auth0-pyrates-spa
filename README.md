@@ -13,7 +13,7 @@ There are several things that are not clear when you build a single-page applica
 What about third-party cookies?
 What are the issues using refresh tokens?
 How do you handle access tokens for multiple APIs?
-And plenty of other little gotchas, and this example attempts to address as many of these as possible.
+There are plenty of little "gotchas", and this example attempts to address as many of these as possible.
 
 This is a stripped-down SPA application built and run with [*Parcel*](https://parceljs.org/).
 Other than some supporting resources, this example contains only an index.html file and a main.js script that drives the authentication and output.
