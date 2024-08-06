@@ -175,7 +175,7 @@ Knowing these two facts is important.
 1. The authentication methods *loginWithPopup()* and *getTokenWithPopup()* are useless in modern browsers because
 users must manually consent to the popup window opening. There is a significant risk they will not.
 
-1. Auth0 always provides an ID Token; the *openid* scope is hardwared in the SDK even if not asked for by the application.
+1. Auth0 always provides an ID Token; the *openid* scope is hardwired in the SDK even if not asked for by the application.
 This is not necessarily a bad thing, but you want to know the SDK is going to do it.
 
 1. Only the ID token and its expiration controls the state of the *isAuthenticated()* authentication client method.
