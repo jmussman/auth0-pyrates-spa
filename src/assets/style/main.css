@@ -1,0 +1,109 @@
+/* main.css
+** Copyright © 2024 Joel A Mussman. All rights reserved.
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1c2242;
+    background-image: url(../images/pyrate-sunset.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.header {
+    height: 150px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    background-image: url(../images/public-room.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    border-bottom: 3px solid darkslategray;
+}
+
+div.header > div.banner {
+    padding-top: 40px;
+    color: lightgrey;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 48pt;
+    font-weight: bold;
+    text-shadow: 4px 4px black;
+}
+
+div.header > img.pyrates {
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    height: 180px;
+    z-index: 100;
+}
+
+div.main {
+    margin: 0;
+    padding: 0;
+    min-height: calc(100vh - 200px);
+    vertical-align: bottom;
+}
+
+div.navigation {
+    float: left;
+    width: 210px;
+    height: calc(100% - 140px);
+    margin: 120px 0 0 0;
+    padding: 10px 30px 10px 10px;
+    text-align: right;
+}
+
+a.navigation {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14pt;
+    font-weight: bold;
+    color: light-grey;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+img.avatar {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+div.content {
+    float: left;
+    width: calc(100% - 273px);
+    min-height: calc(100vh - 220px);
+    margin: 0 0 10px 0;
+    padding: 10px;
+    overflow-x: scroll;
+    background-color: white;
+    opacity: 70%;
+    overflow-x: scroll;
+    border-left: 3px solid darkslategray;
+}
+
+p.welcome {
+    font-size: 16pt;
+}
+
+div.footer {
+    margin: 10px 0 10px 0;
+    padding: 0;
+    color: black;
+    text-align: center;
+    vertical-align: middle;
+}
+
+div.footer > span.footer {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10pt;
+    font-weight: normal;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+a:-webkit-any-link {            /* This is the final override */
+    text-decoration: none;
+    color: black;
+}

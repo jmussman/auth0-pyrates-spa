@@ -1,0 +1,38 @@
+{
+    "name": "pyrates",
+    "version": "1.0.0",
+    "description": "Pyrates SPA application",
+    "config": {
+        "port": 3000
+    },
+    "dependencies": {
+        "@auth0/auth0-spa-js": "^2.1.3",
+        "dotenv": "^16.4.5",
+        "jwt-decode": "^4.0.0",
+        "punycode": "^2.3.1"
+    },
+    "devDependencies": {
+        "buffer": "^6.0.3",
+        "crypto-browserify": "^3.12.0",
+        "events": "^3.3.0",
+        "os-browserify": "^0.3.0",
+        "parcel": "^2.12.0",
+        "path-browserify": "^1.0.1",
+        "process": "^0.11.10",
+        "stream-browserify": "^3.0.0",
+        "string_decoder": "^1.3.0",
+        "vm-browserify": "^1.1.2"
+    },
+    "scripts": {
+        "dev": "parcel --target default --port $npm_package_config_port",
+        "build": "parcel build --target default",
+        "clean": "rm -rf .parcel-cache && rm -rf dist"
+    },
+    "targets": {
+        "default": {
+            "source": "src/index.html",
+            "publicUrl": "/"
+        }
+    },
+    "type": "module"
+}
